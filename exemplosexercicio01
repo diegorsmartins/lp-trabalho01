@@ -1,0 +1,57 @@
+Testes para exercício 01
+
+Exemplo:
+
+Qual o sexo do cliente? F
+Quantas cervejas foram consumidas? 2
+Quantos refrigerantes foram consumidos? 0
+Quantos espetinhos foram consumidos? 1
+Valor da conta:
+R$ 8,00 (valor básico)
+R$ 9,00 (bebida e comida)
+R$ 3,00 (cantores)
+R$ 20,00 (subtotal sem 10%)
+------------------------------------------
+R$ 22,00 (total)
+
+Teste 01:
+
+Qual o sexo do cliente? M
+Quantas cervejas foram consumidas? 5 /12,50
+Quantos refrigerantes foram consumidos? 10 /20
+Quantos espetinhos foram consumidos? 2 /8
+Valor da conta:
+R$ 10,00 (valor básico)
+R$ 40,50 (bebida e comida)
+R$ 0,00 (cantores)
+R$ 50,50 (subtotal sem 10%)
+------------------------------------------
+R$ 0,00 (total)
+
+Teste 02:
+
+Qual o sexo do cliente? F
+Quantas cervejas foram consumidas? 0
+Quantos refrigerantes foram consumidos? 0
+Quantos espetinhos foram consumidos? 0
+Valor da conta:
+R$ 8,00 (valor básico)
+R$ 0,00 (bebida e comida)
+R$ 0,00 (cantores)
+R$ 0,00 (subtotal sem 10%)
+------------------------------------------
+R$ 0,00 (total)
+
+Teste 03:
+
+Qual o sexo do cliente? M
+Quantas cervejas foram consumidas? 0
+Quantos refrigerantes foram consumidos? 0
+Quantos espetinhos foram consumidos? 0
+Valor da conta:
+R$ 10,00 (valor básico)
+R$ 0,00 (bebida e comida)
+R$ 0,00 (cantores)
+R$ 0,00 (subtotal sem 10%)
+------------------------------------------
+R$ 0,00 (total)

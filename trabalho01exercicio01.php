@@ -32,25 +32,22 @@ if ($sexo == "m" || $sexo == "M") { /* valor da ENTRADA */
 	$entrada = 8;
 }
 
-$subtotal1 = $entrada + $comebeb; /* subtotal entre ENTRADA e COMIDA E BEBIDA */
+/* Verifica se o cliente paga ou não os CANTORES */
 
-/* Verifica se o cliente paga ou não o CANTOR */
-
-if ($subtotal1 <= 15) {
-	$cantores = 3
+if ($comebeb <= 15) {
+	$cantores = 3;
 } else {
-	$cantores = 0
-}
+	$cantores = 0;
 }
 
-$subtotal2 = $subtotal1 + $cantores; /* subtotal somando ENTRADA, COMIDA E BEBIDA e CANTORES */
+$subtotal = $entrada + $comebeb + $cantores; /* subtotal somando ENTRADA, COMIDA E BEBIDA e CANTORES */
 
-$total = $subtotal2 * 1.10; /* valor TOTAL FINAL */
+$total = $subtotal * 1.10; /* valor TOTAL FINAL */
 
 print "$entrada Valor da entrada\n";
 print "$comebeb Comida e bebida\n";
 print "$cantores Cantores\n";
-print "$subtotal2 Subtotal sem '10%'\n";
+print "$subtotal Subtotal sem '10%'\n";
 print "----------------------------\n";
 print "$total Total";
 

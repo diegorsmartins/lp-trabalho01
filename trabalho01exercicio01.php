@@ -6,7 +6,7 @@
  * Cerveja = 2,50
  * Refrigerante = 2,00
  * Espetinho = 4,00
- * Cantores = 3,00 (Cobrado somente abaixo dos 15,00)
+ * Cantores = 3,00 (Cobrado somente abaixo dos 15,00 em comida e bebida)
  * Garçom = 10%
  */
 print "Qual o sexo do cliente?\n";
@@ -41,12 +41,12 @@ if ($comebeb <= 15) { // Verifica se o cliente paga ou não os CANTORES
 $subtotal = $entrada + $comebeb + $cantores; // subtotal somando ENTRADA, COMIDA E BEBIDA e CANTORES
 
 $total = $subtotal * 1.10; // valor TOTAL FINAL
-
-print "$entrada Valor da entrada\n"; // mostra o valor da entrada
-print "$comebeb Comida e bebida\n"; // mostra o valor de comida e bebida
-print "$cantores Cantores\n"; // mostra o valor dos cantores, se 0 o consumo de comida e bebida passou de 15,00
-print "$subtotal Subtotal sem '10%'\n"; // mostra o subtotal da entrada, comida, bebida e o cantor
+                           
+print "R$ " .number_format ($entrada, 2, '.', '.'). " Valor da entrada\n"; // mostra o valor da entrada
+print "R$ " .number_format ($comebeb, 2, '.', '.'). " Comida e bebida\n"; // mostra o valor de comida e bebida
+print "R$ " .number_format ($cantores, 2, '.', '.'). "  Cantores\n"; // mostra o valor dos cantores, se 0 o consumo de comida e bebida passou de 15,00
+print "R$ " .number_format ($subtotal, 2, '.', '.'). "  Subtotal sem '10%'\n"; // mostra o subtotal da entrada, comida, bebida e o cantor
 print "----------------------------\n"; // linha para separar o total
-print "$total Total"; // valor que deverá ser pago pelo cliente
+print "R$ " .number_format ($total, 2, '.', '.'). "  Total"; // valor que deverá ser pago pelo cliente
 
 ?>

@@ -10,45 +10,43 @@
  * Garçom = 10%
  */
 print "Qual o sexo do cliente?\n";
-$sexo = trim ( fgets ( STDIN ) ); /* pega o sexo do cliente */
+$sexo = trim ( fgets ( STDIN ) ); // pega o sexo do cliente
 
 print "Quantas cervejas foram consumidas?\n";
-$qcerv = trim ( fgets ( STDIN ) ); /* quantidade da cerveja */
+$qcerv = trim ( fgets ( STDIN ) ); // quantidade da cerveja
 
 print "Quantos refrigerantes foram consumidos?\n";
-$qrefr = trim ( fgets ( STDIN ) ); /* quantidade do refrigerante */
+$qrefr = trim ( fgets ( STDIN ) ); // quantidade do refrigerante
 
 print "Quantos espetinhos foram consumidos?\n";
-$qespt = trim ( fgets ( STDIN ) ); /* quantidade do espeto */
+$qespt = trim ( fgets ( STDIN ) ); // quantidade do espeto
 
-$vcerv = $qcerv * 2.5; /* valor da cerveja */
-$vrefr = $qrefr * 2; /* valor do refrigerante */
-$vespt = $qespt * 4; /* valor do espeto */
-$comebeb = $vcerv + $vrefr + $vespt; /* valor de COMIDA E BEBIDA */
+$vcerv = $qcerv * 2.5; // valor da cerveja
+$vrefr = $qrefr * 2; // valor do refrigerante
+$vespt = $qespt * 4; // valor do espeto
+$comebeb = $vcerv + $vrefr + $vespt; // valor de COMIDA E BEBIDA
 
-if ($sexo == "m" || $sexo == "M") { /* valor da ENTRADA */
+if ($sexo == "m" || $sexo == "M") { // valor da ENTRADA
 	$entrada = 10;
 } else {
 	$entrada = 8;
 }
 
-/* Verifica se o cliente paga ou não os CANTORES */
-
-if ($comebeb <= 15) {
+if ($comebeb <= 15) { // Verifica se o cliente paga ou não os CANTORES
 	$cantores = 3;
 } else {
 	$cantores = 0;
 }
 
-$subtotal = $entrada + $comebeb + $cantores; /* subtotal somando ENTRADA, COMIDA E BEBIDA e CANTORES */
+$subtotal = $entrada + $comebeb + $cantores; // subtotal somando ENTRADA, COMIDA E BEBIDA e CANTORES
 
-$total = $subtotal * 1.10; /* valor TOTAL FINAL */
+$total = $subtotal * 1.10; // valor TOTAL FINAL
 
-print "$entrada Valor da entrada\n";
-print "$comebeb Comida e bebida\n";
-print "$cantores Cantores\n";
-print "$subtotal Subtotal sem '10%'\n";
-print "----------------------------\n";
-print "$total Total";
+print "$entrada Valor da entrada\n"; // mostra o valor da entrada
+print "$comebeb Comida e bebida\n"; // mostra o valor de comida e bebida
+print "$cantores Cantores\n"; // mostra o valor dos cantores, se 0 o consumo de comida e bebida passou de 15,00
+print "$subtotal Subtotal sem '10%'\n"; // mostra o subtotal da entrada, comida, bebida e o cantor
+print "----------------------------\n"; // linha para separar o total
+print "$total Total"; // valor que deverá ser pago pelo cliente
 
 ?>

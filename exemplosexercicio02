@@ -1,0 +1,53 @@
+Testes para exercício 01
+
+Exemplo:
+
+Total de rendimentos bancarios: 1200.00
+Total de rendimentos de salarios ou servicos: 20000.00
+Total de outros rendimentos: 1500.00
+Servicos medicos pagos: 400.00
+Servicos educacionais pagos: 2400.00
+Total de impostos:
+R$ 240,00 (sobre rendimentos bancarios)
+R$ 3000,00 (sobre salarios servicos)
+R$ 150,00 (sobre outros rendimentos)
+R$ 3390,00 (total)
+------------------------------------------
+Maximo a ser abatido:
+R$ 1017,00
+------------------------------------------
+Total de valores possiveis de abater:
+R$ 400,00 (servicos medicos)
+R$ 2400,00 (servicos educacionais)
+R$ 2800,00 (total)
+------------------------------------------
+Imposto total:
+R$ 3390,00 (imposto bruto)
+R$ 1017,00 (abatimentos)
+R$ 2373,00 (total)
+
+Teste 01
+
+Total de rendimentos bancarios: 20.00
+Total de rendimentos de salarios ou servicos: 55000.00
+Total de outros rendimentos: 500.00
+Servicos medicos pagos: 100.00
+Servicos educacionais pagos: 0.00
+Total de impostos:
+R$ 4,00 (sobre rendimentos bancarios)
+R$ 11000,00 (sobre salarios servicos)
+R$ 50,00 (sobre outros rendimentos)
+R$ 11054,00 (total)
+------------------------------------------
+Maximo a ser abatido:
+R$ 3316,20
+------------------------------------------
+Total de valores possiveis de abater:
+R$ 100,00 (servicos medicos)
+R$ 0,00 (servicos educacionais)
+R$ 100,00 (total)
+------------------------------------------
+Imposto total:
+R$ 11054,00 (imposto bruto)
+R$ 100,00 (abatimentos)
+R$ 10954,00 (total)
